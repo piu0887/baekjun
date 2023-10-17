@@ -1,6 +1,3 @@
-import sys
-import math
-
 N = int(input())
 ptr = list(map(int,input().split()))
 
