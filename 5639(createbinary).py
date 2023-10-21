@@ -1,5 +1,4 @@
 import sys
-sys.setrecursionlimit(10**6)
 
 binary_tree={}        #이진 트리를 위한 딕셔너리 선언
 while True:

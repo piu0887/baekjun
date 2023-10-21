@@ -12,7 +12,6 @@
 # 출력: 입력으로 주어진 이진 검색 트리를 후위 순회한 결과를 한 줄에 하나씩 출력
 
 import sys
-sys.setrecursionlimit(10**6)
 
 #입력받을 원소 리스트
 num_list=[]
