@@ -9,7 +9,7 @@
 # 첫째 줄에 연결 요소의 개수를 출력한다.
 
 import sys
-sys.setrecursionlimit(5000)
+sys.setrecursionlimit(5000) # 재귀함수 깊이 5000으로 제한 없으면 런타임 오류남
 input = sys.stdin.readline
 
 N,M = map(int, input().split())

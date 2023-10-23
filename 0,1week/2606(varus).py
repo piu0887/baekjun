@@ -33,18 +33,29 @@ for _ in range(M):
 
 
 
-def bfs(graph,V):
-    global count
-    count = 0
-    queue = deque([V])
-    while queue:
-        pop = queue.popleft()
-        visited[pop] = True
-        for i in graph[pop] :
-            if visited[i] == False :
-                queue.append(i)
-                count +=1
-                visited[i] = True
-    print(count)
+# def bfs(graph,V):
+#     global count
+#     count = 0
+#     queue = deque([V])
+#     while queue:
+#         pop = queue.popleft()
+#         visited[pop] = True
+#         for i in graph[pop] :
+#             if visited[i] == False :
+#                 queue.append(i)
+#                 count +=1
+#                 visited[i] = True
+#     print(count)
+count = 0
 
-bfs(graph,1)
+def dfs(graph,V):
+    global count
+    visited[V] = True
+    for i in graph[V]:
+        if visited[i] == False:
+            count +=1
+            dfs(graph,i)
+    
+
+dfs(graph,1)
+print(count)
