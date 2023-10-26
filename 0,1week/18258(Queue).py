@@ -42,3 +42,24 @@ for i in range(n):
             print(que[-1])
 
 
+
+# class MyQue:
+#     size = 1000
+#     queue = int[size]
+#     index = 0
+    
+
+#     function push(data):
+#         if(index >= size):
+#             return false
+#         queue[++index] = data
+#         return true
+#     function pop():
+#         if(index <= 0)
+#             return -1
+#         else :
+
+
+#         popData = queue[index]
+#         index---
+#         return popData
