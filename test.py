@@ -9,7 +9,7 @@ for _ in range(T):
     M = int(sys.stdin.readline())
 
     dp = [[0] * (M+1) for i in range(N+1)]
-    for i in range(1):
+    for i in range(N):
         dp[i][0] = 1
 
     for j in range(1, N):
